@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "ourMoments",
+  "description": "This extension is a new tab replacement for couples.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "app/icon.png",
+    "default_popup": ""
+  },
+
+  "chrome_url_overrides" : {
+    "newtab": "app/dashboard.html"
+  },
+  "permissions": [
+    "identity",
+    "storage"
+  ],
+  "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'"
+
+}

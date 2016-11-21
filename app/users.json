@@ -1,0 +1,46 @@
+{
+	"users":{
+		"kdieu":{
+			"name": "Kevin",
+			"significantOther": "jluu",
+			"backgroundID": 1,
+			"noteSize": 2,
+			"sigNoteSize": 2,
+			"notes":[
+				{
+					"imageExists": false,
+					"noteType": "rememberWhen",
+					"message": "The day we went to xmas in the park.",
+					"ImageId": 0
+				},
+				{
+					"imageExists" : false,
+					"noteType": "iLoveYouBecause",
+					"message": "You love me unconditionally.",
+					"ImageId": 1
+				}
+			]
+		},
+		"jluu":{
+			"name": "Janet",
+			"significantOther": "kdieu",
+			"backgroundID": 1,
+			"noteSize": 2,
+			"sigNoteSize": 2,
+			"notes":[
+				{
+					"imageExists" : false,
+					"noteType": "rememberWhen",
+					"message": "You farted hella loud....",
+					"ImageId": 0
+				},
+				{
+					"imageExists" : false,
+					"noteType": "iLoveYouBecause",
+					"message": "You love me unconditionally.",
+					"ImageId": 1
+				}
+			]
+		}
+	}
+}

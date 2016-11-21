@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title> New Tab </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/jqueryui.css" />
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-database.js"></script>
+    <script src="js/jqueryui.js"></script>
+    <script src="js/moments.js"></script>
+    <script src="js/dashboard.js"></script>
+  </head>
+
+  <body class='darken'>
+      <div id="center">
+        <div id="currentTime"></div>
+        <div class="mediumFont"> Hi, <input id="userNameInput" class="mediumFont" type="text" name="FirstName" value=""> <span id="beb" class="mediumFont"> </span> </div>
+        <button id="heartButton" class="ourButton">&#9829;</button>
+      </div><!--end of centerdiv-->
+
+      <div id="top-left" class="smallestFont">
+        <span id="letterWeek"></span> <i> letters. </i>
+      </div><!--end of top-left-->
+
+      <div id="bottom-left" class="smallFont">
+        <span style="font-size: 30px"> Together for</span><br/>
+        <span id="anniDays"></span> <br/>
+        <span id="anniHours"></span> <br/>
+        <span id="anniMinutes"></span> <br/>
+        <span id="anniSeconds"></span> <br/>
+      </div><!--end of bottom-left-->
+
+      <div id="top-right" class="smallestFont">
+        <span id="currentDate"></span>
+      </div>
+
+      <div id="bottom-right" class="smallFont">
+        <button id="memoryButton" data-rel="popup" class="ourButton "> + </button>
+      </div>
+
+      <!--beginning of popup to add note-->
+      <div id="popUpForm" class="hidden smallestFont popUp" title="Add a Moment &#9829;">
+        <form id="addNoteForm">
+          <ul class="formList">
+            <li>
+              <h3> Note Type: </h3>
+              <select id="noteType">
+                <option value="rememberWhen">Remember when ...</option>
+                <option value="iLoveYouBecause">I love you because ...</option>
+                <option value="iJustWantYouToKnow">I just want you to know that ... </option>
+                <option value="randomDerp">Random derp ...</option>
+              </select>
+            </li>
+            <li>
+              <input id="fileButton" type="file" name="img">
+            </li>
+            <li>
+              <h3> Message: </h3>
+              <textarea id="message" cols="55" rows="5"></textarea>
+            </li>
+          </ul>
+
+          <center><button id="submitNoteButton">Submit</button></center>
+        </form>
+      </div>
+      <!--end of popup-->
+
+      <!--warning popUp-->
+      <div id="popUpAlert" class="hidden smallestFont popUp" title="Pop Up!">
+      </div>
+
+      <div id="popUpMoment" class="hidden popUp" title="">
+        <div id = "momentImageContainer">
+          <img id="momentImage" src="" />
+        </div>
+        <h3 id="momentMessage"></h3>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+*:focus{
+  outline: none;
+}
+body { 
+  background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: helvetica;
+  color: white;
+}
+#center{
+  margin-top: -100px;
+  font-family: helvetica;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  height: 250px;
+  width: 500px;
+  color:white;
+  font-size: 200px;
+  text-align: center;
+}
+.mediumFont{
+  font-size: 50px;
+}
+.smallestFont{
+  font-size: 20px !important;
+}
+.smallFont{
+  font-size: 40px !important;
+}
+#bottom-left{
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
+}
+#bottom-right{
+  position: absolute;
+  bottom: 4%;
+  left: 93%;
+  text-align: center;
+}
+#top-left{
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
+
+#top-right{
+  position: absolute;
+  top: 5%;
+  left: 88%;
+}
+#userNameInput{
+  color: white;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #FFFFFF;
+  width: 250px;
+}
+.ourButton{
+  color: white;
+  font-size: 80px;
+  background: transparent;
+  border: none;
+}
+.ourButton:hover{
+  font-size: 90px;
+}
+
+.hidden { display: none }
+
+#popUpForm{
+  width: 500px;
+  font-family: helvetica;
+}
+#submitNoteButton{
+  margin: 0 auto;
+}
+.ui-button-icon-primary .ui-icon .ui-icon-closethick{
+  font-color: black;
+  background-color: transparent;
+}
+
+.popUp ul {
+    width:500px;
+    list-style-type:none;
+    list-style-position:outside;
+    margin:0px;
+    padding:0px;
+}
+.popUp li{
+    padding:12px; 
+    position:relative;
+}
+#message{
+  font-size: 15px !important;
+}
+#momentImageContainer{
+  margin: 0 auto;
+  width: 450px;
+  height: 350px;
+}
+#momentImage{
+  width: auto;
+  height: 350px;
+    /* Fills image into the parent element so it's fully covered. Contains aspect-ratio. */
+    object-fit: cover;
+
+    /* Fills image into the parent element so the img is fully shown. Can create letterboxes. */
+    object-fit: contain;
+
+    /* Fills image into the parent element so it's fully covered. Shrinks image, not respecting aspect-ratio. */
+    object-fit: fill;
+  overflow: hidden;
+  object-position: 25% 50%;
+}
+#popUpMoment{
+  text-align: center;
+  font-family: helvetica;
+}
